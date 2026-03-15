@@ -1,0 +1,22 @@
+
+.loader{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    border-radius:24px;
+  }
+  .loader:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #7FFF00;
+    animation: 2s prog ease-in infinite;
+  }
+  @keyframes prog {
+    to  {   width: 100%;}
+  }
