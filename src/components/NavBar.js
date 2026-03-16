@@ -3,7 +3,7 @@ import logo from '../images/nike_logo.jpg'
 
 const NavBar = () => {
   return (
-    <nav className='navbar bg-black flex flex-direction-column justify-around'>
+    <nav className='navbar bg-black flex flex-direction-row justify-around items-center fixed top-0 left-0 w-full z-50'>
         <img src={logo} alt="NIKE" className='h-[4rem]'/>
         <div className='text-[#BFC6C495] flex justify-between gap-8 p-4 pb-5 font-bold'>
             <div className='relative group cursor-pointer hover:text-white'>
