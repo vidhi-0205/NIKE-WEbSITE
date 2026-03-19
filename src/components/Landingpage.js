@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from './NavBar'
+<<<<<<< HEAD
 import backgroundImg from '../images/man_running.jpg'
 import SecondPage from './SecondPage'
 import ThirdPage from './ThirdPage'
@@ -9,6 +10,7 @@ import Sixthpage from './Sixthpage'
 const Landingpage = () => {
   return (
     <div className='bg-black min-h-screen selection-text-[#7fff00] '>
+
       <NavBar />
 <div
         className="relative min-h-screen flex items-center justify-end px-16 text-white top"
@@ -30,10 +32,14 @@ const Landingpage = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <SecondPage />
       <ThirdPage />
       <FourthPage />
       <Sixthpage />
+=======
+      <FifthPage />
+>>>>>>> database-setup
     </div>
 
   )
