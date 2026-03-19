@@ -6,7 +6,7 @@ const SecondPage = () => {
     <div className="relative text-left m-3">
         <p className='px-2 text-[#7fff00] font-light text-[2rem] font-bebas tracking-wide'>TECHNOLOGY</p>
         <h1 className='text-[6rem] font-extrabold leading-none mb-2 font-bebas tracking-wider '
-        style={{ textShadow: "0 0 2px #7fff00" }} >
+        style={{ textShadow: "0 0 4px #7fff00" }} >
             <div>ENGINEERED</div>
             <div>FOR THE</div>
             <span>IMPOSSIBLE</span>

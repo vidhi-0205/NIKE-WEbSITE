@@ -3,6 +3,8 @@ import NavBar from './NavBar'
 import backgroundImg from '../images/man_running.jpg'
 import SecondPage from './SecondPage'
 import ThirdPage from './ThirdPage'
+import FourthPage from './FourthPage'
+import Sixthpage from './Sixthpage'
 
 const Landingpage = () => {
   return (
@@ -14,11 +16,12 @@ const Landingpage = () => {
            background: `url(${backgroundImg}) center / cover no-repeat`
         }}
       >
+        <div className="absolute inset-0 bg-black/60"></div>
 
 
         <div className="relative text-right">
           <p className='px-2 text-[#7fff00] font-light text-[1rem]'>S26 COLLECTION-REDEFINING SPEED</p>
-          <h1 className="text-[10rem] font-extrabold leading-none mb-2 font-bebas" style={{ textShadow: "0 0 3px #7fff00" }} >
+          <h1 className="text-[10rem] font-extrabold leading-none mb-2 font-bebas" style={{ textShadow: "0 0 4px #7fff00" }} >
             <div className='tracking-wider'>JUST</div><span className='text-[10rem] mx-4 font-light'>DO</span><span className='text-[#7fff00] tracking-wider '>IT</span>
           </h1>
           <div className='flex gap-4 '>
@@ -29,6 +32,8 @@ const Landingpage = () => {
       </div>
       <SecondPage />
       <ThirdPage />
+      <FourthPage />
+      <Sixthpage />
     </div>
 
   )
