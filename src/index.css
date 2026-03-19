@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+::selection {
+  @apply text-white bg-[#7fff0080];
+}   
+.outline-text {
+  -webkit-text-stroke: 2px white;
+  color: black;
+  font-size: 3rem;
+  font-family: bebas, sans-serif;
+}

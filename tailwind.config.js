@@ -1,10 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        bebas: ['"Bebas Neue"', 'sans-serif'],
+        bungee:['"Bungee Outline"','cursive'],
+      },
+    },
   },
   plugins: [],
 }
