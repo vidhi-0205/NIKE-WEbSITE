@@ -4,7 +4,7 @@ import backgroundImg from '../images/sneaker-lifestyle.jpg'
 const FourthPage = () => {
   return (
     <div
-        className="relative min-h-screen flex items-center justify-start px-16 text-white top"
+        className="relative min-h-screen flex items-center justify-start px-16 text-white top "
         style={{
            background: `url(${backgroundImg}) center / cover no-repeat`
         }}

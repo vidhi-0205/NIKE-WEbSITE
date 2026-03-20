@@ -4,35 +4,24 @@ import React from 'react'
 
 const FifthPage = () => {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col md:flex-row">
-
-      <div
-        className="flex-1 h-[50vh] md:h-screen bg-center bg-cover"
-        style={{
-          backgroundImage: `url(${heroImg})`,
-        }}
-      ></div>
-
-      <div className="flex-1 flex flex-col justify-center px-10 md:px-16  ">
-
-        <p className="text-[#7fff00] tracking-[3px] mb-5 font-bebas tracking-wide">
-          ATHLETE STORIES
-        </p>
-
-        <h1 className="text-[40px] md:text-[50px] font-bold leading-tight font-bebas tracking-wide">
-          GREATNESS ISN'T GIVEN.
-          <br />
-          <span className="text-[#7fff00]">
-            IT'S EARNED
-          </span>
-          <br />
-          EVERY SINGLE DAY.
-        </h1>
-
-        <p className="mt-8 text-gray-400 tracking-[2px] font-bebas tracking-wide">
-          3x MVP — NIKE SINCE 2023
-        </p>
-
+    <div className="relative min-h-screen flex items-center justify-between text-white mt-40 ">
+      <div>
+        <img src={heroImg} alt="" className=" h-[55rem] w-[55rem] " />
+         <div className="absolute inset-0 bg-black/20"></div>
+      </div>
+      <div>
+        <p className="px-2 text-[#7fff00] font-light text-[2rem] font-bebas tracking-wide">ATHELETE STORIES</p>
+        <h1 className="text-[5rem] font-extrabold leading-none mb-2 font-bebas tracking-wide " style={{ textShadow: "0 0 4px #7fff00" }}>
+          <div>"GREATNESS ISN'T GIVEN.</div>
+          <div className="text-[#7fff00]">IT'S EARNED</div>
+          <div>EVERY SINGLE DAY."</div>
+           </h1>
+          <div className="flex items-center gap-2">
+          <div className="mt-3 h-[1px] w-[50%] bg-[#BFC6C4]"></div>
+          <div className="tracking-wider text-[1rem] text-[#BFC6C4]">3× MVP · NIKE Since 2023</div>
+          <div></div>
+          </div>
+       
       </div>
     </div>
   )

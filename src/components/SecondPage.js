@@ -11,7 +11,7 @@ const SecondPage = () => {
             <div>FOR THE</div>
             <span>IMPOSSIBLE</span>
         </h1>
-        <p className='tracking-wider text-[text-[1.5rem] text-[#BFC6C4]'>Our proprietary NIKE™ technology delivers <br />unprecedented energy return, propelling you <br />forward with every stride. Zero compromise</p>
+        <p className='tracking-wider text-[1rem] text-[#BFC6C4]'>Our proprietary NIKE™ technology delivers <br />unprecedented energy return, propelling you <br />forward with every stride. Zero compromise</p>
         <div className='flex gap-5 font-bebas tracking-wider mt-5' >
         <span>
             <div className='text-[2rem] text-[#7fff00]'>42%</div>

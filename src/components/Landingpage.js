@@ -1,11 +1,12 @@
 import React from 'react'
 import NavBar from './NavBar'
-<<<<<<< HEAD
+
 import backgroundImg from '../images/man_running.jpg'
 import SecondPage from './SecondPage'
 import ThirdPage from './ThirdPage'
 import FourthPage from './FourthPage'
 import Sixthpage from './Sixthpage'
+import FifthPage from './FifthPage'
 
 const Landingpage = () => {
   return (
@@ -32,14 +33,12 @@ const Landingpage = () => {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
       <SecondPage />
       <ThirdPage />
       <FourthPage />
-      <Sixthpage />
-=======
       <FifthPage />
->>>>>>> database-setup
+      <Sixthpage />
+
     </div>
 
   )
