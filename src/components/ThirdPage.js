@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+
 import image1 from '../images/imagex1.avif'
 import image2 from '../images/imagex2.avif'
 import image3 from '../images/imagex3.avif'
