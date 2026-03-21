@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import image1 from '../images/imagex1.avif'
+import image2 from '../images/imagex2.avif'
+import image3 from '../images/imagex3.avif'
+
 import './Thirdpage.css'
 
 const ThirdPage = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    axios.get("http://localhost:5000/collection").then((res) => {
-      setProducts(res.data.slice(0, 3));
-    }).catch((err) => console.log(err));
-  }, []);
 
   return (
     <div className='third-page relative min-h-screen flex items-center px-16 pb-30 text-white flex-col bg-gradient-to-b from-black from-50% via-[#7fff0040] via-70% to-black to-100%'>
@@ -24,10 +20,10 @@ const ThirdPage = () => {
           </div>
         </div>
 
-        <div className="flex gap-10 mb-30 product-card">
-          {products.map((item) => (
+        <div className="flex gap-10 mb-30 production-card">
+          
             <div
-              key={item.id}
+            
               className='relative border border-gray-700 p-10 w-[350px] bg-[#1E201E]'
               style={{ 
                 WebkitBoxReflect: "below 2px linear-gradient(transparent, rgba(0,0,0,0.1))" 
@@ -36,19 +32,63 @@ const ThirdPage = () => {
               {/* Image Container with Drop Shadow */}
               <div className="cursor-pointer flex justify-center items-center ">
                 <img 
-                  src={`http://localhost:5000/${item.image_url}`} 
-                  alt={item.name} 
+                  src={image1} 
+                  alt="loading"
                   className='h-[250px] w-[110%] max-w-none object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-[#7fff0080]' 
                 />
               </div>
               
               <div className='mt-6'>
-                <p className="text-gray-400 text-sm uppercase tracking-tighter">{item.description}</p>
-                <h2 className="font-bold text-2xl uppercase italic tracking-tighter">{item.name}</h2>
-                <p className='text-[#7fff00] font-bold text-xl' >₹{item.price}</p>
+                <p className="text-gray-400 text-sm uppercase tracking-tighter">PERFORMANCE RUNNING</p>
+                <h2 className="font-bold text-2xl uppercase italic tracking-tighter">VOLT PHANTOM</h2>
+                <p className='text-[#7fff00] font-bold text-xl' >₹4,699</p>
               </div>
             </div>
-          ))}
+            <div
+            
+              className='relative border border-gray-700 p-10 w-[350px] bg-[#1E201E]'
+              style={{ 
+                WebkitBoxReflect: "below 2px linear-gradient(transparent, rgba(0,0,0,0.1))" 
+              }}
+            >
+              {/* Image Container with Drop Shadow */}
+              <div className="cursor-pointer flex justify-center items-center ">
+                <img 
+                  src={image2} 
+                  alt="loading"
+                  className='h-[250px] w-[110%] max-w-none object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-[#7fff0080]' 
+                />
+              </div>
+              
+              <div className='mt-6'>
+                <p className="text-gray-400 text-sm uppercase tracking-tighter">PERFORMANCE RUNNING</p>
+                <h2 className="font-bold text-2xl uppercase italic tracking-tighter">VOLT PHANTOM-2</h2>
+                <p className='text-[#7fff00] font-bold text-xl' >₹6,000</p>
+              </div>
+            </div>
+             <div
+            
+              className='relative border border-gray-700 p-10 w-[350px] bg-[#1E201E]'
+              style={{ 
+                WebkitBoxReflect: "below 2px linear-gradient(transparent, rgba(0,0,0,0.1))" 
+              }}
+            >
+              {/* Image Container with Drop Shadow */}
+              <div className="cursor-pointer flex justify-center items-center ">
+                <img 
+                  src={image3} 
+                  alt="loading"
+                  className='h-[250px] w-[110%] max-w-none object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-[#7fff0080]' 
+                />
+              </div>
+              
+              <div className='mt-6'>
+                <p className="text-gray-400 text-sm uppercase tracking-tighter">PERFORMANCE RUNNING</p>
+                <h2 className="font-bold text-2xl uppercase italic tracking-tighter">VOLT PHANTOM-2</h2>
+                <p className='text-[#7fff00] font-bold text-xl' >₹6,000</p>
+              </div>
+            </div>
+          
         </div>
     </div>
   )
