@@ -12,10 +12,10 @@ const ThirdPage = () => {
   }, []);
 
   return (
-    <div className='relative min-h-screen flex items-center px-16 pb-30 text-white flex-col bg-gradient-to-b from-black from-50% via-[#45474B] via-70% to-black to-100%'>
+    <div className='third-page relative min-h-screen flex items-center px-16 pb-30 text-white flex-col bg-gradient-to-b from-black from-50% via-[#7fff0040] via-70% to-black to-100%'>
         
         <div className="flex justify-between w-full items-start mb-16">
-          <div className="m-3">
+          <div className="collection-text m-3">
             <p className='px-2 text-[#7fff00] font-light text-[2rem] font-bebas tracking-wide'>THE COLLECTION</p>
             <h1 className='px-2 font-bebas tracking-wide text-[5rem]' style={{ textShadow: "0 0 10px rgba(127, 255, 0, 0.4)" }}>BUILT TO WIN</h1>
           </div>
@@ -24,7 +24,7 @@ const ThirdPage = () => {
           </div>
         </div>
 
-        <div className="flex gap-10 mb-30">
+        <div className="flex gap-10 mb-30 product-card">
           {products.map((item) => (
             <div
               key={item.id}
@@ -34,11 +34,11 @@ const ThirdPage = () => {
               }}
             >
               {/* Image Container with Drop Shadow */}
-              <div className="cursor-pointer flex justify-center items-center">
+              <div className="cursor-pointer flex justify-center items-center ">
                 <img 
                   src={`http://localhost:5000/${item.image_url}`} 
                   alt={item.name} 
-                  className='h-[250px] w-[110%] max-w-none object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-110' 
+                  className='h-[250px] w-[110%] max-w-none object-contain drop-shadow-[0_20px_30px_rgba(0,0,0,0.8)] transition-transform duration-300 hover:scale-110 hover:shadow-lg hover:shadow-[#7fff0080]' 
                 />
               </div>
               
